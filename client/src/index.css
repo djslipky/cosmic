@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(240, 16%, 6%);
+  --foreground: hsl(200, 7%, 91%);
+  --card: hsl(228, 10%, 10%);
+  --card-foreground: hsl(0, 0%, 85%);
+  --popover: hsl(240, 16%, 6%);
+  --popover-foreground: hsl(200, 7%, 91%);
+  --primary: hsl(196, 100%, 53%);
+  --primary-foreground: hsl(240, 16%, 6%);
+  --secondary: hsl(265, 65%, 58%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(225, 8%, 15%);
+  --muted-foreground: hsl(210, 4%, 46%);
+  --accent: hsl(225, 8%, 15%);
+  --accent-foreground: hsl(196, 100%, 53%);
+  --destructive: hsl(356, 91%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(228, 6%, 18%);
+  --input: hsl(228, 6%, 18%);
+  --ring: hsl(196, 100%, 53%);
+  --chart-1: hsl(196, 100%, 53%);
+  --chart-2: hsl(159, 100%, 36%);
+  --chart-3: hsl(42, 93%, 56%);
+  --chart-4: hsl(147, 79%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(228, 10%, 10%);
+  --sidebar-foreground: hsl(0, 0%, 85%);
+  --sidebar-primary: hsl(196, 100%, 53%);
+  --sidebar-primary-foreground: hsl(240, 16%, 6%);
+  --sidebar-accent: hsl(225, 8%, 15%);
+  --sidebar-accent-foreground: hsl(196, 100%, 53%);
+  --sidebar-border: hsl(205, 26%, 26%);
+  --sidebar-ring: hsl(196, 100%, 53%);
+  --font-sans: 'Exo 2', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: 'Orbitron', monospace;
+  --radius: 1.3rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(196, 100%, 53%, 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(196, 100%, 53%, 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(196, 100%, 53%, 0.00), 0px 1px 2px -1px hsl(196, 100%, 53%, 0.00);
+  --shadow: 0px 2px 0px 0px hsl(196, 100%, 53%, 0.00), 0px 1px 2px -1px hsl(196, 100%, 53%, 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(196, 100%, 53%, 0.00), 0px 2px 4px -1px hsl(196, 100%, 53%, 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(196, 100%, 53%, 0.00), 0px 4px 6px -1px hsl(196, 100%, 53%, 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(196, 100%, 53%, 0.00), 0px 8px 10px -1px hsl(196, 100%, 53%, 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(196, 100%, 53%, 0.00);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+  
+  /* Custom cosmic colors */
+  --cyber-cyan: hsl(196, 100%, 53%);
+  --cosmic-purple: hsl(265, 65%, 58%);
+  --neon-pink: hsl(325, 100%, 52%);
+  --space-black: hsl(240, 16%, 6%);
+  --dark-grey: hsl(225, 8%, 18%);
+  --alien-green: hsl(153, 100%, 51%);
+}
+
+.dark {
+  --background: hsl(240, 16%, 6%);
+  --foreground: hsl(200, 7%, 91%);
+  --card: hsl(228, 10%, 10%);
+  --card-foreground: hsl(0, 0%, 85%);
+  --popover: hsl(240, 16%, 6%);
+  --popover-foreground: hsl(200, 7%, 91%);
+  --primary: hsl(196, 100%, 53%);
+  --primary-foreground: hsl(240, 16%, 6%);
+  --secondary: hsl(265, 65%, 58%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(225, 8%, 15%);
+  --muted-foreground: hsl(210, 4%, 46%);
+  --accent: hsl(225, 8%, 15%);
+  --accent-foreground: hsl(196, 100%, 53%);
+  --destructive: hsl(356, 91%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(228, 6%, 18%);
+  --input: hsl(228, 6%, 18%);
+  --ring: hsl(196, 100%, 53%);
+  --chart-1: hsl(196, 100%, 53%);
+  --chart-2: hsl(159, 100%, 36%);
+  --chart-3: hsl(42, 93%, 56%);
+  --chart-4: hsl(147, 79%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(228, 10%, 10%);
+  --sidebar-foreground: hsl(0, 0%, 85%);
+  --sidebar-primary: hsl(196, 100%, 53%);
+  --sidebar-primary-foreground: hsl(240, 16%, 6%);
+  --sidebar-accent: hsl(225, 8%, 15%);
+  --sidebar-accent-foreground: hsl(196, 100%, 53%);
+  --sidebar-border: hsl(205, 26%, 26%);
+  --sidebar-ring: hsl(196, 100%, 53%);
+  --font-sans: 'Exo 2', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: 'Orbitron', monospace;
+  --radius: 1.3rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(196, 100%, 53%, 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(196, 100%, 53%, 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(196, 100%, 53%, 0.00), 0px 1px 2px -1px hsl(196, 100%, 53%, 0.00);
+  --shadow: 0px 2px 0px 0px hsl(196, 100%, 53%, 0.00), 0px 1px 2px -1px hsl(196, 100%, 53%, 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(196, 100%, 53%, 0.00), 0px 2px 4px -1px hsl(196, 100%, 53%, 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(196, 100%, 53%, 0.00), 0px 4px 6px -1px hsl(196, 100%, 53%, 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(196, 100%, 53%, 0.00), 0px 8px 10px -1px hsl(196, 100%, 53%, 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(196, 100%, 53%, 0.00);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    background: linear-gradient(135deg, hsl(240, 16%, 6%) 0%, hsl(225, 8%, 18%) 50%, hsl(240, 16%, 6%) 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .cosmic-bg {
+    background: linear-gradient(135deg, hsl(240, 16%, 6%) 0%, hsl(225, 8%, 18%) 50%, hsl(240, 16%, 6%) 100%);
+    position: relative;
+  }
+  
+  .cosmic-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(2px 2px at 20px 30px, var(--cyber-cyan), transparent),
+      radial-gradient(2px 2px at 40px 70px, var(--cosmic-purple), transparent),
+      radial-gradient(1px 1px at 90px 40px, var(--neon-pink), transparent),
+      radial-gradient(1px 1px at 130px 80px, var(--alien-green), transparent);
+    background-repeat: repeat;
+    background-size: 200px 100px;
+    opacity: 0.3;
+    animation: float 20s linear infinite;
+  }
+
+  .neon-border {
+    border: 1px solid var(--cyber-cyan);
+    box-shadow: 
+      0 0 5px var(--cyber-cyan),
+      inset 0 0 5px rgba(0, 212, 255, 0.1);
+  }
+
+  .neon-glow {
+    transition: all 0.3s ease;
+  }
+
+  .neon-glow:hover {
+    box-shadow: 
+      0 0 20px var(--cyber-cyan),
+      0 0 30px var(--cyber-cyan),
+      inset 0 0 10px rgba(0, 212, 255, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .holographic {
+    background: linear-gradient(135deg, 
+      rgba(0, 212, 255, 0.1) 0%,
+      rgba(157, 78, 221, 0.1) 50%,
+      rgba(255, 0, 110, 0.1) 100%);
+    backdrop-filter: blur(10px);
+  }
+
+  .cyber-text {
+    text-shadow: 0 0 10px currentColor;
+  }
+
+  .pricing-glow {
+    box-shadow: 0 0 30px rgba(157, 78, 221, 0.3);
+  }
+
+  .reservation-panel {
+    background: linear-gradient(135deg, 
+      rgba(30, 30, 46, 0.9) 0%, 
+      rgba(10, 10, 15, 0.9) 100%);
+    border: 1px solid rgba(0, 255, 163, 0.3);
+    backdrop-filter: blur(15px);
+  }
+}
+
+@layer utilities {
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
+@keyframes glow {
+  from { 
+    box-shadow: 0 0 20px var(--cyber-cyan);
+    text-shadow: 0 0 10px currentColor;
+  }
+  to { 
+    box-shadow: 0 0 30px var(--cyber-cyan), 0 0 40px var(--cyber-cyan);
+    text-shadow: 0 0 20px currentColor, 0 0 30px currentColor;
+  }
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px);
+  }
+  50% { 
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
