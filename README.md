@@ -136,7 +136,7 @@ This project is configured for easy deployment on Replit and can be deployed wit
 
 ## 📝 License
 
-© 2024 Space Bowling. All rights reserved across the galaxy.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
